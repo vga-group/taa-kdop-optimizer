@@ -90,12 +90,20 @@ sum occurring in potentially different orders, causing rounding differences. As
 such, it's near impossible to replicate the exact same numbers found in the
 supplemental material, even if the same input images were to be used.
 
+## License
+
+All code in this repository is licensed under the MIT No Attribution License.
+
+Alternatively, `kdop_clipping.glsl` is also available under CC0, just like the
+version in supplemental material. Use whichever license you want. At the time of
+writing, MIT No Attribution is an OSI-approved license and CC0 is not.
+
 ## Future work
 
 These would be nice-to-have, but the authors don't currently plan on doing them:
 
 * Allow image optimizer to optimize for multiple representative images at the same time
-* Optimize k-DOP volume computation; [a recent paper](https://doi.org/10.1145/3681758.3697996)
+* Optimize k-DOP volume computation; [a recent paper](https://dl.acm.org/doi/abs/10.1145/3675391)
   presents a faster way to evaluate the vertices of a k-DOP, which could be used for this.
 * Make image optimizer fast enough to evaluate all 3x3 neighborhoods instead of sampling a subset
 * Support EXR or some other high bit depth format for image optimizer
