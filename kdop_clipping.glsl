@@ -62,9 +62,9 @@ const int neighborhood_size = 9;
 // It works by constructing a k-DOP in color space around the color neighborhood
 // (approximating a convex hull around the neighborhood), then casting a ray
 // from the current color towards the previous color and using the intersection
-// point. This _approximately_ limits history colors to linear combinations of
-// the neighborhood's colors, which is what you would expect from anti-aliased
-// edges.
+// point. This _approximately_ limits history colors to what is achievable with
+// a weighted average of the neighborhood's colors, which is what you would
+// expect from anti-aliased edges.
 //
 // Parameters:
 //     cur_color: own pixel color from the current frame
