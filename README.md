@@ -107,5 +107,6 @@ These would be nice-to-have, but the authors don't currently plan on doing them:
   presents a faster way to evaluate the vertices of a k-DOP, which could be used for this.
 * Make image optimizer fast enough to evaluate all 3x3 neighborhoods instead of sampling a subset
 * Support EXR or some other high bit depth format for image optimizer
+* HLSL version of kdop_clipping.glsl for easier copy/pasting
 
 Pull requests are welcome!
