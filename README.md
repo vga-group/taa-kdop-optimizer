@@ -3,7 +3,8 @@ k-DOP axis optimizers for "k-DOP Clipping: Robust Ghosting Mitigation in Tempora
 
 This repo contains two tools for precalculating optimized k-DOP axis sets, as used
 in the paper [k-DOP Clipping: Robust Ghosting Mitigation in Temporal Antialiasing](https://doi.org/10.1145/3681758.3697996)
-(to appear in SIGGRAPH Asia 2024 Technical Communications).
+(to appear in SIGGRAPH Asia 2024 Technical Communications). There's also
+copy/pastable k-DOP clipping shader code in `kdop_clipping.glsl`.
 
 ## Building
 
@@ -107,6 +108,6 @@ These would be nice-to-have, but the authors don't currently plan on doing them:
   presents a faster way to evaluate the vertices of a k-DOP, which could be used for this.
 * Make image optimizer fast enough to evaluate all 3x3 neighborhoods instead of sampling a subset
 * Support EXR or some other high bit depth format for image optimizer
-* HLSL version of kdop_clipping.glsl for easier copy/pasting
+* HLSL version of `kdop_clipping.glsl` for easier copy/pasting
 
 Pull requests are welcome!
