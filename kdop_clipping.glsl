@@ -79,6 +79,9 @@ const int neighborhood_size = 9;
 //     around. Also, this form gets 'cur_color' twice: once in 'cur_color', and
 //     a second time somewhere in 'colors'. So, if your compiler misses that,
 //     you may also be able to claw some registers back there too.
+//
+//     Unrolling these loops is absolutely vital. You really don't want to
+//     dynamically index an array on a GPU ;)
 vec3 kdop_clipping(
     vec3 cur_color,
     vec3 prev_color,
