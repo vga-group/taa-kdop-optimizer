@@ -2,9 +2,11 @@ k-DOP axis optimizers for "k-DOP Clipping: Robust Ghosting Mitigation in Tempora
 ================================================================================
 
 This repo contains two tools for precalculating optimized k-DOP axis sets, as used
-in the paper [k-DOP Clipping: Robust Ghosting Mitigation in Temporal Antialiasing](https://doi.org/10.1145/3681758.3697996)
-(to appear in SIGGRAPH Asia 2024 Technical Communications). There's also
-copy/pastable k-DOP clipping shader code in `kdop_clipping.glsl`.
+in the paper [k-DOP Clipping: Robust Ghosting Mitigation in Temporal Antialiasing](
+https://webpages.tuni.fi/vga/publications/k_DOP_Clipping.html)
+(to appear in SIGGRAPH Asia 2024 Technical Communications). [DOI link.](https://doi.org/10.1145/3681758.3697996)
+There's also copy/pastable k-DOP clipping shader code in `kdop_clipping.glsl`.
+
 
 ## Building
 
