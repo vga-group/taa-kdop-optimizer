@@ -132,10 +132,11 @@ vec3 kdop_clipping(
 // tighter bounding volumes and thus remove more ghosting, but it also starts
 // rejecting valid colors too, causing more flickering.
 //
-// Honestly, I wouldn't really bother with this, as it's slightly slower and
-// introduces more annoying flickering in edges. But if you _really_ want a
-// blunt hammer approach to ghosting and don't care about flicker or AA quality,
-// maybe it's useful?
+// Honestly, I wouldn't really bother with variance clipping for k-DOPs, as it's
+// slightly slower and introduces more annoying flickering in edges. Use the
+// normal clipping (above function) instead. But if you _really_ want a blunt
+// hammer approach to ghosting and don't care about flicker or AA quality, maybe
+// it's useful?
 //
 // Parameters:
 //     cur_color: own pixel color from the current frame
