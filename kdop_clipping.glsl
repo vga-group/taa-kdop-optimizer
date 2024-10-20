@@ -104,7 +104,7 @@ vec3 kdop_clipping(
         }
         // Some extra padding to prevent issues with otherwise zero-volume
         // k-DOPs in corner cases.
-        extent += vec2(-epsilon +epsilon);
+        extent += vec2(-epsilon, +epsilon);
 
         // Compute intersections to the planes of the current slab
         float proj_pos = dot(cur_color, axis);
